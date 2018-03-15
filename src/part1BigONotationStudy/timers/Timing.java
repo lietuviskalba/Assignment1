@@ -1,4 +1,4 @@
-package Timers;
+package part1BigONotationStudy.timers;
 
 import java.util.Random;
 import java.math.BigInteger;
