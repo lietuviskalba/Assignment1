@@ -24,11 +24,13 @@ public class Stopwatch
 	 stop the stop watch.
 	*/
 	public void stop()
-	{	stopTime = System.nanoTime();	}
+	{	
+		stopTime = System.nanoTime();	
+	}
 
 	/**
-	elapsed time in secods.
-	@return the time recorded on the stopwatch in seconds
+	elapsed time in seconds.
+	@return the time recorded on the stop watch in seconds
 	*/
 	public double time()
 	{	return (stopTime - startTime) / NANOS_PER_SEC;	}

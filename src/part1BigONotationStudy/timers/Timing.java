@@ -3,7 +3,8 @@ package part1BigONotationStudy.timers;
 import java.util.Random;
 import java.math.BigInteger;
 
-final class Timing {
+public class Timing { // changed final to public
+	
 	public static int fact(int n) {
 		return (n <= 0) ? 1 : n * fact(n-1);
 	}
@@ -68,6 +69,7 @@ final class Timing {
 		Random ran = new Random();
 		for (int i = 0; i < n; i++) {
 			val = ran.nextInt() % n;
+			//System.out.println(i+ ") seeing the values in action");
 			if (val < 0)
 				val += n;
 			arr[i] = val;
