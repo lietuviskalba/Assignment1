@@ -24,8 +24,6 @@ public class Timing { // changed final to public
 	public static double fact(double n) {
 		return (n <= 0) ? 1 : n * fact((double) (n-1));
 	}
-
-
     // recursive factorial, gets stack overflow beyond 8000
 	public static BigInteger factr(BigInteger n) {
 		if (n.equals(BigInteger.ZERO))
@@ -113,6 +111,7 @@ public class Timing { // changed final to public
 		int mini;
 		int val;
 		for (int i = 0; i < a.length; i++) {
+			// System.out.println(a[i]+ ") seeing the values in action"); //???
 			mini = mickeyi(a, i);
 			val = a[mini];
 			a[mini] = a[i];
