@@ -1,5 +1,6 @@
 package part2JavadocsLinkedSequenceStudy.driver;
 
+import part2JavadocsLinkedSequenceStudy.OurLinkedList.ILinkedSequence;
 import part2JavadocsLinkedSequenceStudy.OurLinkedList.LinkedSequence;
 
 public class TestLinkedSequence {

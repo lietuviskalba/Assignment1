@@ -1,5 +1,4 @@
-package LinkedSequence;
-
+package part2JavadocsLinkedSequenceStudy.OurLinkedList;
 
 public interface ILinkedSequence<T>{
 	//add interface for all required methods

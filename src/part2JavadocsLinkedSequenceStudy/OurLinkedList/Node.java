@@ -1,4 +1,5 @@
-package LinkedSequence;
+package  part2JavadocsLinkedSequenceStudy.OurLinkedList;
+
 
 
 public class Node <T>{
