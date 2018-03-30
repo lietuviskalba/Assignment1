@@ -1,3 +1,13 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Ryan Hirmiz>
+*Student Number:     <101086605>
+*Date:				 2018 - 03 - 29
+*Description:        <driver to test the linked sequence method>
+
+****************************************************************************************************/
+
 package part2JavadocsLinkedSequenceStudy.driver;
 
 import part2JavadocsLinkedSequenceStudy.OurLinkedList.ILinkedSequence;
@@ -16,7 +26,7 @@ public class TestLinkedSequence {
 		sq1.addAfter("B");
 		sq1.addAfter("C");
 		sq1.addBefore("D");
-		sq1.addBefore("C");
+		sq1.addBefore("Z");
 		sq1.addBefore("F");
 		//add some element to sq2
 		sq2.addAfter("AA");

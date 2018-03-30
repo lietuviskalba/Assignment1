@@ -1,3 +1,13 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Quan Trinh>
+*Student Number:     <101094529>
+*Date:				 2018 - 03 - 29
+*Description:        <Node contains information of itself, the previous node and the next node>
+****************************************************************************************************/
+
+
 package  part2JavadocsLinkedSequenceStudy.OurLinkedList;
 
 

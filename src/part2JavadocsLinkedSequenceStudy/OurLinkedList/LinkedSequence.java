@@ -1,3 +1,12 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Quan Trinh>
+*Student Number:     <101094529>
+*Date:				 2018 - 03 - 29
+*Description:        <the implementations of all the methods>
+****************************************************************************************************/
+
 package part2JavadocsLinkedSequenceStudy.OurLinkedList;
 
 

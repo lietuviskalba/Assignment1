@@ -1,3 +1,11 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Quan Trinh>
+*Student Number:     <101094529>
+*Date:				 2018 - 03 - 29
+*Description:        <just an interface>
+****************************************************************************************************/
 package part2JavadocsLinkedSequenceStudy.OurLinkedList;
 
 public interface ILinkedSequence<T>{

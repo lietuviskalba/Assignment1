@@ -1,3 +1,12 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Mantas Lingaitis>
+*Student Number:     <101165443>
+*Date:				 2018 - 03 - 29
+*Description:        <Test the provided methods with loops and time them>
+****************************************************************************************************/
+
 package part1BigONotationStudy.method_tester;
 
 import java.math.BigInteger;
@@ -22,14 +31,13 @@ public class MethodTest {
 	double currTime = 0;
 	double prevTime = 0;
 		
-	int[] nArr = Timing.randomarr(1); //8192000
-	
+	int[] nArr = {};
 	
 	public void testDaffy_A(boolean isShow) {
 		timer.start();
 		//======================================== A
 		for (int i=nAB; i<=mAB; i++) {			
-			Timing.daffy(nAB);
+			Timing.daffy(i);
 			timer.stop();
 			System.out.println(timer.time()); // 44
 		}
@@ -41,7 +49,7 @@ public class MethodTest {
 		//======================================== B		Check the currTime if you want
 		prevTime = currTime;				
 		for (int i=nAB; i<=mAB; i++) {		
-			Timing.donald(nAB);
+			Timing.donald(i);
 			timer.stop();
 			currTime = timer.time();
 			//System.out.println("curr time: " + currTime + "  - prev Time: " + prevTime + " = " + ((currTime - prevTime) / 1000000000.0));
@@ -54,6 +62,7 @@ public class MethodTest {
 	}
 	
 	public void testMickey_C(boolean isShow) {
+		populate(mArrC);
 		//======================================== C
 		for (int i = nArrC; i <= mArrC; i *= 2) {			
 			Timing.mickey(nArr);	
@@ -65,6 +74,7 @@ public class MethodTest {
 	}
 	
 	public void testMinnie_D(boolean isShow) {
+		populate(mArrDEF);
 		//======================================== D
 		for (int i = nArrDEF; i <= mArrDEF; i *= 2) {
 			Timing.minnie(nArr);		
@@ -76,9 +86,10 @@ public class MethodTest {
 	}
 	
 	public void testGoofy_E1(boolean isShow) {
+		populate(mArrDEF);
 		//======================================== E1
 		for (int i = nArrDEF; i <= mArrDEF; i *= 2) {			
-				Timing.goofy(nArr);		
+			Timing.goofy(nArr);		
 			timer.stop();
 			System.out.println(timer.time());
 		}	
@@ -87,9 +98,10 @@ public class MethodTest {
 	}
 	
 	public void testPluto_E2(boolean isShow) {
+		populate(mArrDEF);
 		//======================================== E2
 		for (int i = nArrDEF; i <= mArrDEF; i *= 2) {
-				Timing.pluto(nArr);			
+			Timing.pluto(nArr);			
 			timer.stop();
 			System.out.println(timer.time());
 		}	
@@ -98,10 +110,11 @@ public class MethodTest {
 	}
 	
 	public void testPlutoAndGoofy_F(boolean isShow) {
+		populate(mArrDEF);
 		//======================================== F
 		for (int i = nArrDEF; i <= mArrDEF; i *= 2) {
 				Timing.pluto(nArr);
-				Timing.goofy(nArr);
+				Timing.gyro(nArr);
 			timer.stop();
 			System.out.println(timer.time());
 		}
@@ -118,9 +131,14 @@ public class MethodTest {
 				Timing.fact(bign);
 			}
 			timer.stop();
-			System.out.println(timer.time()); //64000
+			System.out.println(timer.time()); 
 		}	
 		if(isShow)
 		System.out.println("	G: Fact method time: " + timer.time());	
-		}
+	}
+	public void populate(int rangeN) {
+		//Populate the values of the array with n
+		nArr = Timing.randomarr(rangeN);
+	}
 }
+

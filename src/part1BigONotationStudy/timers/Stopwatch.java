@@ -1,3 +1,13 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Mantas Lingaitis>
+*Student Number:     <101165443>
+*Date:				 2018 - 03 - 29
+*Description:        <A provided class to time methods>
+****************************************************************************************************/
+
+
 package part1BigONotationStudy.timers;
 
 

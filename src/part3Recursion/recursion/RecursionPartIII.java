@@ -1,8 +1,18 @@
+/****************************************************************************************************
+*Project:            <COMP2080_ASSIGN1_NULL_AND_VOID>
+*Assignment:         <assignment 1>
+*Author(s):          <Morgan Gill>
+*Student Number:     <100566959>
+*Date:				 2018 - 03 - 29
+*Description:        <This class is designed to execute a few recursive methods with different outputs.>
+****************************************************************************************************/
 package part3Recursion.recursion;
 
 public class RecursionPartIII {
 
-static int[] intArray = null;
+	static int[] intArray = null;
+	static String s;
+	static int ctr;
 	
 	public static void pattern(int x, int y) {
 		
@@ -27,7 +37,8 @@ static int[] intArray = null;
 			System.out.println("'LEVELS' ARGUMENT MUST NOT BE GREATER THAN OR EQUAL TO 10!");
 			return;
 		}
-		String s = title + ".";
+		// s = title + ".";
+		s = title;
 		
 		if (intArray == null) { // Initializes the array.
 		intArray = new int[levels];
@@ -40,27 +51,39 @@ static int[] intArray = null;
 			else {
 				break;
 			}
+			intArray[levels - 1] = 0;
+		}
+		
+		intArray[levels - 1] += 1; // Increments the last index by 1.
+		
+		for (int i = 0; i < levels; i++) { // Carries over increments to other indexes.
+			if (i < 0) {
+				i ++;
+				// continue;
+			}
+			else if (intArray[0] >= 10) {
+				break;
+			}
+		    else if (intArray[i] == 10) {
+				intArray[i - 1] += 1;
+				intArray[i] = 1;
+				i = i - 2;
+			}
 		}
 		
 		for (int i = 0; i < levels; i++) { // Forming the string for printing to the console.
 			s = s + intArray[i] + ".";
 		}
 		
-		intArray[levels - 1] += 1; // Increments the last index by 1.
-		
-		for (int i = 0; i < levels; i++) { // Carries over increments to other indexes.
-			if (intArray[i] == 10) {
-				intArray[i - 1] += 1;
-				intArray[i] = 0;
-			}
-		}
 		
 		if (intArray[0] >= 10) { // If the first index reaches 10 or more, this will stop the execution.
 			intArray = null;
+			s = "";
 			return;
 		}
 		
 		System.out.println(s);
 		level(title, levels);
 	}
+	
 }
